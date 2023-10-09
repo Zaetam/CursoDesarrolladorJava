@@ -1,4 +1,4 @@
-package clase3;
+package paqueteclase3;
 
 public class Ejercicio1b {
 	
