@@ -6,8 +6,10 @@ public class Ejercicio2 {
 	
 	 String abecedario="abcdefghijklmnñopqrstuvwxyz";
 	 String palabra="hola que tal";
+	 //String palabra="ipmbrvfubm";
 	 String nuevapalabra="";
 	 String abecedariodoble=abecedario+abecedario;
+	 String operacion="codificar";
 	 
 	 
 	 
@@ -19,7 +21,7 @@ public class Ejercicio2 {
 	 System.out.println(desplazamiento);
 	
 	 //codificar
-	 
+	 if (operacion.equals("codificar")) {
 	 String palabrasinespacios=palabra.replace(" ","");
 	 System.out.println(palabrasinespacios);
 	 
@@ -31,8 +33,25 @@ public class Ejercicio2 {
 		nuevapalabra=nuevapalabra+String.valueOf(nuevaletra);
 		
 	};
+	
+	
 	 	
 	 System.out.println(nuevapalabra);
 	 
-};
+	 };
+	 
+	//decodificar
+	 
+	 if (operacion.equals("decodificar")) {
+		 for (int i=0; i<palabra.length();i++) {
+				int posicionabc =abecedario.indexOf(palabra.charAt(i));
+				int nuevaposabc=posicionabc-desplazamiento;
+				
+				char nuevaletra=abecedariodoble.charAt(nuevaposabc);
+				nuevapalabra=nuevapalabra+String.valueOf(nuevaletra);
+				
+		 };
+		 System.out.println(nuevapalabra);
+	 };
+ };
 }
