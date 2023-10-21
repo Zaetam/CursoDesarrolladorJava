@@ -15,6 +15,7 @@ public class Persona {
 		this.nombre= nombre;
 		this.apellido=apellido;
 		this.fechaDeNacimiento=fechaDeNacimiento;
+		this.carrito=carrito;
 	}
 	
 	
@@ -44,7 +45,7 @@ public class Persona {
 	
 	
 	public Carrito getCarrito() {
-		return carrito;
+		return this.carrito;
 	}
 		
 	public void setCarrito(Carrito carrito) {
