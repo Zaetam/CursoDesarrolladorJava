@@ -26,13 +26,16 @@ public class Principal {
 			
 			Carrito carrito= new Carrito (producto1, producto2, producto3,LocalDateTime.parse("2023-10-18T06:27"));
 			Persona persona1= new Persona ("Alejandro", "Sosa",	LocalDateTime.parse("1986-06-06T06:45"), carrito); 
-		
+			
 		
 		} catch (IOException e) {
 			e.printStackTrace();
+			
 		}
+	
 		
-		
+	;
+	 
 	}
 
 }

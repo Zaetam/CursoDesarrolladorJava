@@ -11,7 +11,7 @@ public class Persona {
 	private Carrito carrito;
 	
 	
-	public Persona (String nombre, String apellido,	LocalDateTime fechaDeNacimiento) {
+	public Persona (String nombre, String apellido,	LocalDateTime fechaDeNacimiento, Carrito carrito) {
 		this.nombre= nombre;
 		this.apellido=apellido;
 		this.fechaDeNacimiento=fechaDeNacimiento;
