@@ -9,8 +9,7 @@ public class Persona {
 	private String apellido;
 	private LocalDateTime fechaDeNacimiento;
 	private Carrito carrito;
-	
-	
+		
 	public Persona (String nombre, String apellido,	LocalDateTime fechaDeNacimiento, Carrito carrito) {
 		this.nombre= nombre;
 		this.apellido=apellido;
@@ -18,15 +17,12 @@ public class Persona {
 		this.carrito=carrito;
 	}
 	
-	
 	public String getNombre() {
 		return this.nombre;
 	}
 	public void setNombre(String nombre) {
 		this.nombre=nombre;
 	}
-	
-	
 	
 	public String getApellido() {
 		return this.apellido;
